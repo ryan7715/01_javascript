@@ -1,40 +1,42 @@
-var ay = "토"
+var day = "토"
 
 switch (day) {
     case "토":
     case "일":
+        console.log("주말입니다.");
         break;
-        console.log("주말입니다");
-    default:
+    case "월":
         console.log("평일입니다.");
+    case "화":
+        console.log("평일입니다.")
 }
 
-if (day === "토" || day === "일") {
-    console.log("주말입니다");
+
+if (day === "토" || "일") {
+    console.log("주말입니다.");
 } else {
-    console.log("평일입니다");
+    console.log("평일입니다.");
 }
 
 var score = 85;
 
-// 이 case에 대해 실행하고 판단해라
+// 이 case에 대해 실행하고 판단하기
 switch (true) {
     case score >= 90:
-      console.log("A");
-      break;
+        console.log("A");
+        break;
     case score >= 80:
         console.log("B");
-        break
+        break;
     case score >= 70:
         console.log("C");
         break;
     case score >= 60:
-         console.log("D");
+        console.log("D");
         break;
     default:
-        console.log("E");
+        console.log("F");
+        // 맨 마지막 case 또는 default엔
+        // break를 쓰지 않아도 됨 (필요 X)
+        // 어차피 코드가 끝나기 때문
 }
-
-// 맨 마지막 case 또는 default엔
-// break 를 쓰지 않아도 됨 (필요 x)
-// 어차피 코드가 끝나지 않기 때문에
